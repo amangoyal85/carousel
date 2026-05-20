@@ -11,7 +11,7 @@ const VideoDetailsPage = () => {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const res = await axios.post("http://localhost:5000/videos-by-id", { videoId: id });
+        const res = await axios.post("https://carouselbac-production.up.railway.app/videos-by-id", { videoId: id });
         setVideos(res?.data?.data ?? []);
       } catch (error) {
         console.warn("Failed to load video details", error);

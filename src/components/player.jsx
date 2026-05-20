@@ -88,7 +88,7 @@ const VideoPlayer = ({ video }) => {
   try {
     const browser = navigator.userAgent;
 
-    await axios.post("http://localhost:5000/like", {
+    await axios.post("https://carouselbac-production.up.railway.app/like", {
       videoId: video.id,
       platform: "",
       browser,
@@ -120,7 +120,7 @@ const VideoPlayer = ({ video }) => {
     try {
       const browser = navigator.userAgent;
 
-      await axios.post("http://localhost:5000/share", {
+      await axios.post("https://carouselbac-production.up.railway.app/share", {
       videoId: video.id,
       platform: "",
       browser,

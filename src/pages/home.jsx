@@ -13,7 +13,7 @@ const HomePage = () => {
 
   const fetchVideos = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/videos");
+      const res = await axios.get("https://carouselbac-production.up.railway.app/videos");
       setVideos(res?.data?.data ?? []);
     } catch (error) {
       console.warn("Failed to load videos", error);

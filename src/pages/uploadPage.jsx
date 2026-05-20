@@ -15,7 +15,7 @@ const UploadPage = () => {
     }
 
     try {
-      await axios.post("http://localhost:5000/upload", formData, {
+      await axios.post("https://carouselbac-production.up.railway.app/upload", formData, {
         headers: { "Content-Type": "multipart/form-data" }
       });
       alert("Videos uploaded successfully.");
